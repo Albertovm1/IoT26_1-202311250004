@@ -1,0 +1,1 @@
+Repositorio para a disciplina de IoT-2026.1
