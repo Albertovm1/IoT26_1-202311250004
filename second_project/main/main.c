@@ -8,11 +8,11 @@
 #include "mqtt_client.h"
 #include "esp_log.h"
 
-#define EXAMPLE_ESP_WIFI_SSID "brisa-2433572"
-#define EXAMPLE_ESP_WIFI_PASS "tnvtord7"
+#define EXAMPLE_ESP_WIFI_SSID "wifi-iot-2.4g"
+#define EXAMPLE_ESP_WIFI_PASS "iot2026.1"
 
 static const char *TAG = "MQTT_TUTORIAL";
-#define BROKER_URL "mqtt://192.168.0.9" // Coloque o IP do seu notebook aqui
+#define BROKER_URL "mqtt://10.1.133.82" // Coloque o IP do seu notebook aqui
 
 static void mqtt_event_handler(void *handler_args, esp_event_base_t base, int32_t event_id, void *event_data) {
     esp_mqtt_event_handle_t event = event_data;
