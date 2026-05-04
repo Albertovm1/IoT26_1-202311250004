@@ -1,0 +1,10 @@
+Sequencia de comandos para ajustar ambiente da ESP-IDF
+
+1. Remove-Item Env:IDF_TARGET
+2. idf.py set-target esp32c6
+3. idf.py menuconfig (ALTERAR WIFI)
+
+Sequencia de comandos para rodar o ambiente da ESP-IDF
+
+1. idf.py port (PARA DESCOBRIR A PORTA)
+2. idf.py -p COMX flash monitor
