@@ -17,10 +17,13 @@
 #include "esp_timer.h"
 
 // CONFIG
-#define WIFI_SSID  "wifi-iot-2.4g"
-#define WIFI_PASS  "iot2026.1"
+// 1. Nome e a senha do Wi-Fi do roteador que vai usar
+#define WIFI_SSID  "MERCUSYS_7E02" 
+#define WIFI_PASS  "70960594"
 
-#define BROKER_URI "mqtt://10.1.133.82"
+// 2. IP da BeagleBone
+#define BROKER_URI "mqtt://192.168.0.9" 
+
 #define MQTT_TOPIC "ifpb/projeto/led"
 #define STATUS_TOPIC "ifpb/projeto/status"
 
