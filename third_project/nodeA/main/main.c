@@ -22,7 +22,7 @@
 #define WIFI_PASS  "70960594"
 
 // 2. IP da BeagleBone
-#define BROKER_URI "mqtt://192.168.0.9" 
+#define BROKER_URI "mqtt://192.168.1.108" 
 
 #define MQTT_TOPIC "ifpb/projeto/led"
 #define STATUS_TOPIC "ifpb/projeto/status"

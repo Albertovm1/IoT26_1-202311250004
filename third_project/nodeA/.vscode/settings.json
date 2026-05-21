@@ -1,7 +1,7 @@
 {
   "C_Cpp.intelliSenseEngine": "default",
   "idf.openOcdConfigs": [
-    "board/esp32c6-builtin.cfg"
+    "board/esp32s3-builtin.cfg"
   ],
   "idf.currentSetup": "C:\\esp\\v5.5.3\\esp-idf",
   "idf.customExtraVars": {
@@ -12,5 +12,7 @@
     "--background-index",
     "--query-driver=**",
     "--compile-commands-dir=c:\\Users\\Alberto\\OneDrive\\Desktop\\IoT\\second_project\\build"
-  ]
+  ],
+  "idf.flashType": "JTAG",
+  "idf.portWin": "COM8"
 }
