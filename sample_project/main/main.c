@@ -134,7 +134,7 @@ static void esp_zb_task(void *pvParameters) {
 }
 
 void app_main(void) {
-    ESP_LOGI(TAG, "Iniciando Gateway Coordenador Zigbee - Grupo 2");
+    ESP_LOGI(TAG, "Iniciando Gateway Coordenador Zigbee");
 
     esp_zb_platform_config_t config = {
         .radio_config = ESP_ZB_DEFAULT_RADIO_CONFIG(),
