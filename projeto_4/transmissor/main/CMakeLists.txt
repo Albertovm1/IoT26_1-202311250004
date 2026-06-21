@@ -1,0 +1,14 @@
+idf_component_register(
+    SRCS
+        "main.c"
+        "ds18b20.c"
+        "zigbee_handler_emissor.c"
+    INCLUDE_DIRS
+        "."
+    REQUIRES
+        nvs_flash
+        esp_timer
+        driver
+        espressif__esp-zigbee-lib
+        espressif__esp-zboss-lib
+)

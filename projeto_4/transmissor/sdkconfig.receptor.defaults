@@ -1,0 +1,27 @@
+# sdkconfig para o RECEPTOR (Coordenador Zigbee + WiFi)
+# Uso:
+#   idf.py fullclean
+#   idf.py -DSDKCONFIG_DEFAULTS="sdkconfig.receptor.defaults" build flash monitor
+
+# ── Zigbee (Coordenador) ─────────────────────────────────
+CONFIG_ZB_ENABLED=y
+CONFIG_ZB_ZCZR=y                        # Coordinator/Router
+CONFIG_ZB_ZED=n
+CONFIG_ZB_SLEEP_ENABLE=n               # Coordenador nao dorme
+
+# ── IEEE 802.15.4 (radio Zigbee) ────────────────────────
+CONFIG_IEEE802154_ENABLED=y
+
+# ── WiFi ────────────────────────────────────────────────
+CONFIG_ESP_WIFI_ENABLED=y
+
+# ── FreeRTOS ─────────────────────────────────────────────
+CONFIG_FREERTOS_HZ=1000
+
+# ── Partição customizada (factory 2MB) ──────────────────
+CONFIG_PARTITION_TABLE_CUSTOM=y
+CONFIG_PARTITION_TABLE_CUSTOM_FILENAME="partitions.csv"
+CONFIG_PARTITION_TABLE_OFFSET=0x8000
+
+# ── Logs ─────────────────────────────────────────────────
+CONFIG_LOG_DEFAULT_LEVEL_INFO=y

@@ -1,0 +1,20 @@
+{
+  "idf.currentSetup": "C:\\esp\\v5.5.3\\esp-idf",
+  "idf.openOcdConfigs": [
+    "board/esp32c6-builtin.cfg"
+  ],
+  "idf.flashType": "UART",
+  "idf.portWin": "COM14",
+  "idf.cmakeCompileArgs": [
+    "-j 2"
+  ],
+  "idf.customExtraVars": {
+    "IDF_TARGET": "esp32c6"
+  },
+  "clangd.path": "C:\\Espressif\\tools\\esp-clang\\esp-19.1.2_20250312\\esp-clang\\bin\\clangd.exe",
+  "clangd.arguments": [
+    "--background-index",
+    "--query-driver=**",
+    "--compile-commands-dir=c:\\Users\\Alberto\\OneDrive\\Desktop\\Project_Final\\build"
+  ]
+}

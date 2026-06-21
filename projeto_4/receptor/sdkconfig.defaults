@@ -1,0 +1,16 @@
+# ── Zigbee Coordinator ──────────────────────────────────────────────────
+CONFIG_ZB_ENABLED=y
+CONFIG_ZB_SDK_1xx=y
+CONFIG_ZB_ZCZR=y                        # Coordinator/Router
+CONFIG_ZB_ZED=n
+# ── IEEE 802.15.4 ────────────────────────────────────────────────────────
+CONFIG_IEEE802154_ENABLED=y
+
+# ── Wi-Fi ────────────────────────────────────────────────────────────────
+CONFIG_ESP_WIFI_SOFTAP_SUPPORT=n
+
+# ── MQTT ─────────────────────────────────────────────────────────────────
+CONFIG_MQTT_PROTOCOL_311=y
+
+# ── Logs ─────────────────────────────────────────────────────────────────
+CONFIG_LOG_DEFAULT_LEVEL_INFO=y
