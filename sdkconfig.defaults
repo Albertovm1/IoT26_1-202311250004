@@ -1,0 +1,18 @@
+# ── Zigbee ──────────────────────────────────────────────
+CONFIG_ZB_ENABLED=y
+CONFIG_ZB_ZCZR=n
+CONFIG_ZB_ZED=y                         # End Device
+CONFIG_ZB_ED_AGING_TIMEOUT=64          # Timeout padrão (64 * 10s = 640s)
+CONFIG_ZB_SLEEP_ENABLE=y               # Habilita sleep no End Device
+
+# ── IEEE 802.15.4 (radio Zigbee) ────────────────────────
+CONFIG_IEEE802154_ENABLED=y
+
+# ── FreeRTOS ─────────────────────────────────────────────
+CONFIG_FREERTOS_HZ=1000
+
+# ── Deep Sleep / RTC ─────────────────────────────────────
+CONFIG_ESP_SLEEP_RTC_BUS_ISO_WORKAROUND=y
+
+# ── Logs ─────────────────────────────────────────────────
+CONFIG_LOG_DEFAULT_LEVEL_INFO=y
